@@ -1,7 +1,9 @@
 from operator import truediv
 import random
-
-
+print("====================================================")
+print("Welcome to Lerato's random password generator")
+print("=====================================================")
+amt = int(input("How many passwords would you like to generate? "))
 chars =",./';[]-"
 number = "0123456789"
 upper_cases ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -22,6 +24,6 @@ if numbers:
 if symbols :
     password += chars
 
-
-new_password = "".join(random.sample(password,8))     
-print(new_password)         
+for i in range(amt):
+    new_password = "".join(random.sample(password,8))     
+    print(new_password)         
