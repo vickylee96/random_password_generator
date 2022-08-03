@@ -26,4 +26,4 @@ if symbols :
 
 for i in range(amt):
     new_password = "".join(random.sample(password,8))     
-    print(new_password)         
+     
